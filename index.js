@@ -12,7 +12,7 @@ let CATALOG = [];
 //server/catalog.json
 //http://myjson.dit.upm.es/api/bins/dkl8
 
-fetch('http://myjson.dit.upm.es/api/bins/dkl8')
+fetch('server/catalog.json')
   .then((res) => res.json())
   .then((body) => {
     CATALOG = body;
